@@ -11,6 +11,16 @@ class Ability(Stat):
 		self.modifier=0
 
 	def setModifier(self):
+		if self.value>=10:
+			self.modifier=(self.value-10)//2
+		else:
+			setModifierWhenValueIsLessThanTen()
+
+	def setModifierWhenValueIsLessThanTen(self):
+		if self.value%2==1:
+			self.modifier=10-self.value
+		if self.value%2==0:
+			self.modifier=(10-(self.value+1)
 
 def rollingDices():
 	results=[]
