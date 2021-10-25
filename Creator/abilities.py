@@ -9,7 +9,4 @@ class Ability():
 		if self.value>=10:
 			self.modifier=(self.value-10)//2
 		else:
-			self.setModifierWhenValueIsLessThanTen()
-
-	def setModifierWhenValueIsLessThanTen(self):
-		self.modifier=(self.value-10)//2
+			self.modifier=(self.value-10)//2
